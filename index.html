@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <title>Registration Bootstrap</title>
+
+
+</head>
+
+<body>
+
+    
+    <img src="headerlogo.png" class="img-fluid" alt="headerlogo1">
+  
+
+    <div class="the-header2">
+        <h4 style="background-color: #2B58B1;">Please fill up this Registration form to proceed.</h4>
+    </div><br>
+   
+    <form class="needs-validation" novalidate>
+
+    <div>
+        <fieldset>
+
+        <legend>Personal Info</legend><br>
+
+        <label class="form-check-label" for="ln"></label>
+        <input type="text" name="ln" id="ln" placeholder="Last Name" required>
+        <div class="valid-feedback">Valid Last Name.</div>
+        <div class="invalid-feedback">Invalid Last Name!</div>&nbsp &nbsp;
+    
+        <label class="form-check-label" for="fn"></label>
+        <input type="text" name="fn" id="fn" placeholder="First Name" required>
+        <div class="valid-feedback">Valid First Name.</div>
+        <div class="invalid-feedback">Invalid First Name!</div>&nbsp &nbsp;
+
+        <label class="form-check-label" for="mn"></label>
+        <input type="text" name="mn" id="md" placeholder="Middle Name" required>
+        <div class="valid-feedback">Valid Middle Name.</div>
+        <div class="invalid-feedback">Invalid Middle Name!</div><br><br>
+
+        <label class="form-label" for="bd">Birthdate:</label>
+        <input type="date" name="bd" id="bd" required>
+        <div class="invalid-feedback">Invalid Birthdate!</div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+
+        <label class="form-label" for="g">Gender:</label>
+        <input type="radio" value="Male" name="g" id="f" required><label id="m">Male</label>
+        <input type="radio" value="Female" name="g" id="m" required><label id="f">Female</label>
+        <div class="invalid-feedback">Invalid Gender!</div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+
+        <label class="form-label" for="cs">Civil Status:</label>
+        <input type="radio" value="Single" name="cs" id="s" required><label id="s">Single</label>
+        <input type="radio" value="Married" name="cs" id="ma" required><label id="ma">Married</label>
+        <div class="invalid-feedback">Invalid Gender!</div><br><br>
+
+        <label class="form-check-label" for="ad">Complete Address:</label><br>
+        <textarea type="text" name="ad" id="ad" placeholder="House/Bldg No., Street, Baranggay, City, Province, Country" rows="2" cols="120" required></textarea>
+        <div class="valid-feedback">Valid Address.</div>
+        <div class="invalid-feedback">Invalid Address!</div><br><br>
+
+        <label class="form-label" for="ea">Email:</label>
+        <input type="email" name="ea" id="ea" placeholder="example@gmail.com" required> 
+        <div class="valid-feedback">Valid Email.</div>
+        <div class="invalid-feedback">Invalid Email!</div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+        
+        <label class="form-label" for="cn">Contact Number:</label>
+        <input type="tel" name="cn" id="cn" placeholder="+63" required max="10">
+        <div class="valid-feedback">Valid Contact Number.</div>
+        <div class="invalid-feedback">Invalid Contact Number!</div><br><br>
+
+        <label class="form-label" for="ps">Password:</label>
+        <input type="password" name="ps" id="ps" required>
+        <div class="valid-feedback">Valid Password.</div>
+        <div class="invalid-feedback">Invalid Password!</div><br><br>
+
+    </fieldset><br><br>
+</div>
+
+<div>
+    <fieldset>
+
+        <legend>Enrollment Info</legend><br>
+        
+        <label class="form-label" for="dt">Date today:</label>
+        <input type="time" name="dt" id="dt" required>
+        <div class="valid-feedback">Valid Date.</div>
+        <div class="invalid-feedback">Invalid Date!</div><br><br>
+        
+        <label class="form-label" for="cr">Course:</label>
+        <input list="course" name="cr" id="cr" placeholder="Enter Course" required>
+        <div class="valid-feedback">Valid Course.</div>
+        <div class="invalid-feedback">Invalid Course!</div><br><br>
+       
+        <datalist id="course">
+            <option>Bachelor of Science in Information Technology</option>
+            <option>Bachelor of Science in Business Administration</option>
+            <option>Bachelor of Science in Engineering</option>
+            <option>Bachelor of Science in E-Commerce</option>
+            <option>Bachelor of Science in Nursing</option>
+            <option>Bachelor of Science in Education</option>
+            <option>Bachelor of Science in Criminology</option>
+        </datalist>
+
+        <label class="form-check-label" for="nu">Number of Units:</label>
+        <input type="number" name="nu" id="nu" min="1" max="30" required>
+        <div class="valid-feedback">Valid Units.</div>
+        <div class="invalid-feedback">Invalid Units!</div><br><br>
+
+
+        <label class="form-label" for="ss">Schedule Status:</label>
+        <select name="ss" id="ss" required>
+            <option value="reg">Regular Schedule</option>
+            <option value="ireg">Iregular Schedule</option>
+        </select>
+        <div class="invalid-feedback">Invalid Schedule!</div><br><br>
+
+    </fieldset>
+        
+    <input type="checkbox" name="cb" id="cb" required><label class="form-label" for="cb"> I agree that the above information is true.</label>
+    <div class="invalid-feedback">Please check the checkbox!</div><br><br>
+
+        <button type="submit" class="btn btn-secondary" >Register</button>
+       
+    </div>
+</form>
+<br><br><br>
+
+    <div class="the-footer">
+        <h4 style="background-color: #2B58B1;">Customer Service Details ..</h4>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+
+</body>
+</html>
